@@ -1,0 +1,387 @@
+@media screen and (max-width: 1536px) {
+  .budget-summary .budget {
+    flex-direction: column;
+  }
+  .budget-categories .item:last-child {
+    margin-bottom: 0;
+  }
+  .budget-categories .top {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* Sidebar */
+  #sidebar {
+    width: 64px;
+    overflow-y: hidden;
+  }
+  #sidebar .content {
+    padding: 12px;
+  }
+  /* Sidebar Logo */
+  #logo .logo-content {
+    justify-content: center;
+  }
+  .logo-content .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-content .logo-icon i {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .logo-content .title {
+    display: none;
+  }
+  /* Sidebar Main Nav */
+  #main-nav .outer {
+    justify-content: center;
+    padding-inline: 8px;
+  }
+  #main-nav .outer span {
+    display: none;
+  }
+  /* Sidebar Quick Actions */
+  #quick-actions h3 {
+    display: none;
+  }
+  #quick-actions .action {
+    justify-content: center;
+    padding: 8px;
+  }
+  #quick-actions .action .icon {
+    flex-shrink: 0;
+  }
+  #quick-actions .action span {
+    display: none;
+  }
+  /* Main Content */
+  #main-content {
+    margin-right: 64px;
+  }
+  /* Header */
+  .header-content .mobile-status {
+    display: none;
+  }
+  /* Dashboard Widgets */
+  #dashboard-widgets {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "notifications-card income-vs-expenses-card"
+      "transactions-card transactions-card"
+      "bills-card account-summary-card"
+      "budget-overview-card payment-methods-card";
+  }
+  /* Transactions Card */
+  .transactions-card .content {
+    scrollbar-width: none;
+  }
+  /* Budget Overview Card */
+  .budget-summary .budget {
+    flex-direction: row;
+  }
+  .budget-summary .budget .rest {
+    align-self: center;
+  }
+  .budget-categories .item:last-child {
+    margin-bottom: 35px;
+  }
+  .budget-categories .top {
+    flex-direction: row;
+  }
+  .budget-categories .top .budget {
+    align-self: center;
+  }
+  .income-expenses .bottom {
+    margin-bottom: 38px;
+  }
+  .account-summary-card .account-card:last-child {
+    margin-bottom: 74px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* Summary Cards */
+  #summary-cards .card p:nth-child(2) {
+    font-size: 24px;
+    line-height: 1.33333;
+  }
+  /* Dashboard Widgets */
+  #dashboard-widgets {
+    align-items: start;
+  }
+  /* Budget Overview Card */
+  .budget-summary .budget {
+    flex-direction: column;
+  }
+  .budget-summary .budget .rest {
+    align-self: flex-end;
+  }
+  .budget-categories .item:last-child {
+    margin-bottom: 0px;
+  }
+  .budget-categories .top {
+    flex-direction: column;
+  }
+  .budget-categories .top .budget {
+    align-self: flex-start;
+  }
+  /* Income vs Expanses */
+  .income-expenses .bottom {
+    margin-bottom: 38px;
+  }
+  /* Account Summary Card */
+  .account-summary-card .account-card {
+    flex-direction: column;
+  }
+  .account-summary-card .account {
+    align-self: flex-start;
+  }
+  .account-summary-card .account-card p.money {
+    align-self: flex-end;
+  }
+  .account-summary-card .account-card:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Sidebar */
+  #sidebar {
+    display: none;
+  }
+  /* Main Content */
+  #main-content {
+    margin: 0;
+    padding: 16px 16px 32px 16px;
+  }
+  /* Header */
+  #main-content #header {
+    margin-bottom: 24px;
+  }
+  #header .header-content {
+    padding: 16px;
+  }
+  .header-content .right {
+    gap: 12px;
+  }
+  .header-content .right .logo {
+    width: 48px;
+    height: 48px;
+  }
+  .header-content .right .logo i {
+    font-size: 18px;
+    line-height: 1.55556;
+  }
+  .header-content .right .title h1 {
+    font-size: 24px;
+    line-height: 1.33333;
+  }
+  .header-content .right .title p {
+    font-size: 12px;
+    line-height: 1.33333;
+  }
+  .header-content .right .status {
+    padding: 4px 8px;
+  }
+  .header-content .right .status span {
+    font-size: 12px;
+    line-height: 1.33333;
+  }
+  .header-content .left {
+    gap: 8px;
+  }
+  .header-content .left .actions {
+    gap: 4px;
+  }
+  .header-content .left .actions button {
+    width: 32px;
+    height: 32px;
+  }
+  .header-content .left .actions i {
+    font-size: 13.5px;
+    line-height: 1.42857;
+  }
+  .header-content .left .notifications span {
+    width: 12px;
+    height: 12px;
+  }
+  .header-content .left .user-profile {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .user-profile .user-info p:first-child {
+    font-size: 12px;
+    line-height: 1.33333;
+  }
+  .user-profile .user-info p:last-child {
+    display: none;
+  }
+  .header-content .left .user-profile img {
+    width: 32px;
+    height: 32px;
+  }
+  .header-content .mobile-status {
+    display: none;
+  }
+  /* Summary Cards */
+  #summary-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "current-balance-card"
+      "income-card"
+      "expenses-card";
+  }
+  #summary-cards .card p:nth-child(2) {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  /* Dashboard Widgets */
+  #dashboard-widgets {
+    grid-template-columns: 1fr;
+    align-items: start;
+    grid-template-areas:
+      "notifications-card"
+      "transactions-card"
+      "bills-card"
+      "budget-overview-card"
+      "income-vs-expenses-card"
+      "account-summary-card"
+      "payment-methods-card";
+  }
+  .notifications-card {
+    order: 1;
+  }
+  .transactions-card {
+    order: 2;
+  }
+  .bills-card {
+    order: 3;
+  }
+  .budget-overview-card {
+    order: 4;
+  }
+  .income-vs-expenses-card {
+    order: 5;
+  }
+  .account-summary-card {
+    order: 6;
+  }
+  .payment-methods-card {
+    order: 7;
+  }
+  /* Transactions Card */
+  .transactions-card,
+  .notifications-card {
+    padding: 16px;
+  }
+  .transactions-card .card-header h2,
+  .notifications-card .card-header h2 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .transactions-card .card-header span {
+    font-size: 12px;
+    line-height: 1.33333;
+  }
+  .transactions-card .card-header span i {
+    font-size: 10px;
+    margin-right: 1px;
+  }
+  .transactions-card table {
+    font-size: 12px;
+    line-height: 1.33333;
+  }
+  table thead th,
+  tbody td {
+    padding: 8px 4px;
+  }
+  /* Budget Overview Card */
+  .budget-summary .budget {
+    flex-direction: row;
+  }
+  .budget-summary .budget .rest {
+    align-self: center;
+  }
+  .budget-categories .top {
+    flex-direction: row;
+  }
+  .budget-categories .top .budget {
+    align-self: center;
+  }
+  /* Income vs Expanses */
+  .income-vs-expenses-card {
+    padding-bottom: 5px;
+  }
+  .income-expenses .bottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  /* Account Summary Card */
+  .account-summary-card .account-card {
+    flex-direction: row;
+  }
+  .account-summary-card .account-card p.money {
+    align-self: center;
+  }
+  .account-summary-card .account-card:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 665px) {
+  .transactions-card {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .transactions-card .content {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #d1d5db #f3f4f6;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* Header */
+  #header .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .header-content .right {
+    width: 100%;
+  }
+  .header-content .right .status {
+    display: none;
+  }
+  .header-content .left {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .user-profile .user-info {
+    display: none;
+  }
+  .header-content .mobile-status {
+    width: 100%;
+    background-color: #f0fdf4;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #dcfce7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .header-content .mobile-status .green-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation-name: dot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .header-content .mobile-status span {
+    font-size: 12px;
+    line-height: 1.33333;
+    font-weight: 500;
+    color: #008236;
+  }
+}
