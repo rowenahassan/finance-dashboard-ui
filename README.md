@@ -20,8 +20,9 @@ A responsive finance dashboard interface built using HTML and CSS Grid.
 
 ## Live Demo
 
-(Add live demo link here)
+https://rowenahassan.github.io/finance-dashboard-ui/
 
 ## Author
 
 Built by Rowena Hassan
+
